@@ -2,8 +2,8 @@
 //import de.johoop.jacoco4sbt.JacocoPlugin._
 //import de.johoop.jacoco4sbt.{HTMLReport, XMLReport}
 
-lazy val root = project.in(file("."))
-//  .settings(releaseSettings: _*).settings(commonJacocoSettings: _*)
+lazy val root = project.in(file(".")).settings(releaseSettings: _*)
+// .settings(commonJacocoSettings: _*)
 
 name := "api-common"
 
@@ -18,7 +18,7 @@ val playVersion = "2.3.9"
 
 libraryDependencies ++= Seq(
   "com.typesafe.play" %% "play-java-ws" % playVersion  % "provided",
-  "com.typesafe.play" % "play-test_2.11" % playVersion,
+  "com.typesafe.play" % "play-test_2.11" % playVersion
 //  "net.logstash.logback" % "logstash-logback-encoder" % "4.2"
 )
 
