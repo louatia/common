@@ -1,4 +1,4 @@
-package com.nejma.common.binding;
+package com.github.louatia.common.binding;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;

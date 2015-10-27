@@ -1,4 +1,4 @@
-package com.nejma.common.binding;
+package com.github.louatia.common.binding;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.JsonInclude;

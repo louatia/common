@@ -1,4 +1,4 @@
-package com.nejma.common.http;
+package com.github.louatia.common.http;
 
 import play.mvc.Http;
 

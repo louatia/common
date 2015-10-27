@@ -1,8 +1,8 @@
-package com.nejma.common.http;
+package com.github.louatia.common.http;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.google.common.io.ByteStreams;
-import com.nejma.common.binding.JsonBinder;
+import com.github.louatia.common.binding.JsonBinder;
 import org.w3c.dom.Document;
 import play.Logger;
 import play.libs.Json;

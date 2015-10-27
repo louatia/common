@@ -9,7 +9,7 @@ name := "api-common"
 
 scalaVersion := "2.11.1"
 
-organization := "com.nejma"
+organization := "com.github.louatia"
 
 publishArtifact in Test := true
 
