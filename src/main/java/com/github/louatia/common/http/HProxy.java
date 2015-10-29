@@ -20,7 +20,7 @@ import static java.nio.charset.StandardCharsets.UTF_8;
  * Created by aminelouati on 6/12/15.
  */
 
-public class NProxy {
+public class HProxy {
 
 
     public static enum HttpMethod {
@@ -140,7 +140,7 @@ public class NProxy {
     public static final String HTTP_DELETE = "DELETE";
     public static final String CHUNKED_TRANSFER_ENCODING = "chunked";
 
-    private static Logger.ALogger logger = Logger.of(NProxy.class);
+    private static Logger.ALogger logger = Logger.of(HProxy.class);
 
     /**
      * method to create a clean query strings , netty implementation in play had issues with req.queryString()

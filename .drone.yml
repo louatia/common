@@ -1,0 +1,4 @@
+build:
+  image: sphonic/scala:2.11.7
+  commands:
+    - sbt --version

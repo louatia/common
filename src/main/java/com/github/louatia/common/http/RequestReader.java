@@ -41,7 +41,7 @@ public class RequestReader {
         } else if (body.asText() != null) {
             bytes = body.asText().getBytes(StandardCharsets.UTF_8);
         } else if (body.asFormUrlEncoded() != null) {
-            bytes = NProxy.bodyFromFormUrlEncoded(body.asFormUrlEncoded()).getBytes(StandardCharsets.UTF_8);
+            bytes = HProxy.bodyFromFormUrlEncoded(body.asFormUrlEncoded()).getBytes(StandardCharsets.UTF_8);
         } else if (body.asXml() != null) {
             throw new UnsupportedOperationException("RequestReader Not Implemented for " + request.getHeader(Http.HeaderNames.CONTENT_TYPE));
         } else {
