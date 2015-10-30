@@ -30,7 +30,10 @@ libraryDependencies ++= Seq(
 //  jacoco.reportFormats in jacoco.Config := Seq(XMLReport(encoding = "utf-8"), HTMLReport(encoding = "utf-8")))
 
 
-
+resolvers +=
+  "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots"
+resolvers += Resolver.sonatypeRepo("releases")
+resolvers += Resolver.typesafeRepo("releases")
 
 publishTo := {
   val nexus = "https://oss.sonatype.org/"
