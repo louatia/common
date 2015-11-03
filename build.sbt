@@ -84,7 +84,10 @@ pomExtra := (
 //updateEnv("SONATYPE_USER","louatia")
 //updateEnv("SONATYPE_PASSWORD","#3INOx3612")
 
-val sonatype_user = sys.props.get("SONATYPE_USER").toString
-val sonatype_password = sys.props.get("SONATYPE_PASSWORD").toString
+//val sonatype_user =
+//val sonatype_password =
+////println( sonatype_user )
+////println( sonatype_password )
 
-credentials += Credentials("Sonatype Nexus Repository Manager", "oss.sonatype.org", sonatype_user, sonatype_password)
+
+credentials += Credentials("Sonatype Nexus Repository Manager", "oss.sonatype.org", System.getenv("SONATYPE_USER"), System.getenv("SONATYPE_PASSWORD"))
