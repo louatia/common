@@ -1,6 +1,7 @@
 //
 //import de.johoop.jacoco4sbt.JacocoPlugin._
 //import de.johoop.jacoco4sbt.{HTMLReport, XMLReport}
+import sbt._
 
 lazy val root = project.in(file(".")).settings(releaseSettings: _*)
 // .settings(commonJacocoSettings: _*)
@@ -71,3 +72,19 @@ pomExtra := (
     </developers>
   )
 
+//sys.props.addupdate("SONATYPE_USER","louatia")
+////sys.props+=(kv=("SONATYPE_PASSWORD","#3MINOx3612"))
+
+//
+//def updateEnv(key: String, value: String) = util.Properties.envOrNone(key) match {
+//   case Some(v) if v.nonEmpty => v
+//   case _ => value
+//}
+//
+//updateEnv("SONATYPE_USER","louatia")
+//updateEnv("SONATYPE_PASSWORD","#3INOx3612")
+
+val sonatype_user = sys.props.get("SONATYPE_USER").toString
+val sonatype_password = sys.props.get("SONATYPE_PASSWORD").toString
+
+credentials += Credentials("Sonatype Nexus Repository Manager", "oss.sonatype.org", sonatype_user, sonatype_password)
