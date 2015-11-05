@@ -71,22 +71,4 @@ pomExtra := (
     </developers>
   )
 
-//sys.props.addupdate("SONATYPE_USER","louatia")
-////sys.props+=(kv=("SONATYPE_PASSWORD","#3MINOx3612"))
-
-//
-//def updateEnv(key: String, value: String) = util.Properties.envOrNone(key) match {
-//   case Some(v) if v.nonEmpty => v
-//   case _ => value
-//}
-//
-//updateEnv("SONATYPE_USER","louatia")
-//updateEnv("SONATYPE_PASSWORD","#3INOx3612")
-
-//val sonatype_user =
-//val sonatype_password =
-////println( sonatype_user )
-////println( sonatype_password )
-
-
 credentials += Credentials("Sonatype Nexus Repository Manager", "oss.sonatype.org", System.getenv("SONATYPE_USER"), System.getenv("SONATYPE_PASSWORD"))
