@@ -5,7 +5,6 @@ import sbt._
 
 lazy val root = project.in(file(".")).settings(releaseSettings: _*)
 // .settings(commonJacocoSettings: _*)
-
 name := "api-common"
 
 scalaVersion := "2.11.7"
