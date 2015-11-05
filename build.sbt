@@ -9,7 +9,7 @@ name := "api-common"
 
 scalaVersion := "2.11.7"
 
-organization := "com.github."+System.getenv("SONATYPE_USER")
+organization := "com.github.louatia"
 
 publishArtifact in Test := true
 
