@@ -8,11 +8,8 @@ lazy val root = project.in(file(".")).settings(releaseSettings: _*)
 name := "common"
 
 scalaVersion := "2.11.7"
-
 organization := "com.github.louatia"
-
 publishArtifact in Test := true
-
 
 val playVersion = "2.3.9"
 
