@@ -5,7 +5,7 @@ import sbt._
 
 lazy val root = project.in(file(".")).settings(releaseSettings: _*)
 // .settings(commonJacocoSettings: _*)
-name := "api-common"
+name := "common"
 
 scalaVersion := "2.11.7"
 
@@ -59,8 +59,8 @@ pomExtra := (
       </license>
     </licenses>
     <scm>
-      <url>git@github.com:louatia/api-common.git</url>
-      <connection>scm:git:git@github.com:louatia/api-common.git</connection>
+      <url>git@github.com:louatia/common.git</url>
+      <connection>scm:git:git@github.com:louatia/common.git</connection>
     </scm>
     <developers>
       <developer>
